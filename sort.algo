@@ -1,0 +1,25 @@
+    ALGORITHM insertionSort
+VAR
+arr: ARRAY_OF INTEGER
+i,j,key: INTEGER  
+BEGIN
+    Write("give the dimension of Array"); 
+    read(n);
+i:=0
+    FOR i FROM 0 TO n-1 STEP 1  DO
+        Write(Arr[i])
+        Read(arr[i]);
+    END_FOR
+
+    FOR i FROM 0 TO n-1 STEP 1  DO
+    key := arr[i];
+	j = i - 1;
+    WHILE (j >= 0 && arr[j] > key)
+            arr[j + 1] := arr[j];
+        	j := j - 1;
+            END_WHILE
+            RETURN arr[j + 1] := key
+            END_FOR
+            Write(arr)
+END
+
